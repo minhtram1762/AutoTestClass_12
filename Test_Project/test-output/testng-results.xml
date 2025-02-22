@@ -1,144 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="4" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-22T23:42:32 MYT" name="Default suite" finished-at="2025-02-22T23:42:32 MYT" duration-ms="44">
+  <suite started-at="2025-02-23T02:25:38 MYT" name="Default suite" finished-at="2025-02-23T02:26:33 MYT" duration-ms="54989">
     <groups>
     </groups>
-    <test started-at="2025-02-22T23:42:32 MYT" name="Default test" finished-at="2025-02-22T23:42:32 MYT" duration-ms="44">
+    <test started-at="2025-02-23T02:25:38 MYT" name="Default test" finished-at="2025-02-23T02:26:33 MYT" duration-ms="54989">
       <class name="automation.testsuite.Day13_btvn">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:automation.testsuite.Day13_btvn@32ee6fee]" started-at="2025-02-22T23:42:32 MYT" name="openBrowser" finished-at="2025-02-22T23:42:32 MYT" duration-ms="27" status="FAIL">
-          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
-            <message>
-              <![CDATA[Unable to obtain: geckodriver, error geckodriver must exist: /Users/lejunnie/AutoTestClass_12/Test_Project/driver/geckodriver
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
-Build info: version: '4.28.0', revision: 'ac342546e9'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '11.0.24'
-Driver info: driver.version: FirefoxDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error geckodriver must exist: /Users/lejunnie/AutoTestClass_12/Test_Project/driver/geckodriver
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
-Build info: version: '4.28.0', revision: 'ac342546e9'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '11.0.24'
-Driver info: driver.version: FirefoxDriver
-at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:121)
-at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
-at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:132)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:102)
-at automation.common.CommonBase.initBrowser(CommonBase.java:23)
-at automation.testsuite.Day13_btvn.openBrowser(Day13_btvn.java:18)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.IllegalStateException: geckodriver must exist: /Users/lejunnie/AutoTestClass_12/Test_Project/driver/geckodriver
-at org.openqa.selenium.internal.Require$PathStateChecker.isExecutable(Require.java:475)
-at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:118)
-... 40 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:automation.testsuite.Day13_btvn@16610890]" started-at="2025-02-23T02:25:38 MYT" name="openBrowser" finished-at="2025-02-23T02:25:42 MYT" duration-ms="3661" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="loginSuccessfully()[pri:0, instance:automation.testsuite.Day13_btvn@32ee6fee]" started-at="2025-02-22T23:42:32 MYT" name="loginSuccessfully" finished-at="2025-02-22T23:42:32 MYT" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
-            <message>
-              <![CDATA[Unable to obtain: geckodriver, error geckodriver must exist: /Users/lejunnie/AutoTestClass_12/Test_Project/driver/geckodriver
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
-Build info: version: '4.28.0', revision: 'ac342546e9'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '11.0.24'
-Driver info: driver.version: FirefoxDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error geckodriver must exist: /Users/lejunnie/AutoTestClass_12/Test_Project/driver/geckodriver
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
-Build info: version: '4.28.0', revision: 'ac342546e9'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '11.0.24'
-Driver info: driver.version: FirefoxDriver
-at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:121)
-at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
-at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:132)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:102)
-at automation.common.CommonBase.initBrowser(CommonBase.java:23)
-at automation.testsuite.Day13_btvn.openBrowser(Day13_btvn.java:18)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.IllegalStateException: geckodriver must exist: /Users/lejunnie/AutoTestClass_12/Test_Project/driver/geckodriver
-at org.openqa.selenium.internal.Require$PathStateChecker.isExecutable(Require.java:475)
-at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:118)
-... 40 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
+        <test-method signature="loginFail_IncorrectEmail()[pri:0, instance:automation.testsuite.Day13_btvn@16610890]" started-at="2025-02-23T02:25:42 MYT" name="loginFail_IncorrectEmail" finished-at="2025-02-23T02:25:43 MYT" duration-ms="763" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFail_IncorrectEmail -->
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:automation.testsuite.Day13_btvn@16610890]" started-at="2025-02-23T02:25:43 MYT" name="openBrowser" finished-at="2025-02-23T02:25:45 MYT" duration-ms="2584" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="loginFail_IncorrectEmailPass()[pri:0, instance:automation.testsuite.Day13_btvn@16610890]" started-at="2025-02-23T02:25:45 MYT" name="loginFail_IncorrectEmailPass" finished-at="2025-02-23T02:25:46 MYT" duration-ms="928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFail_IncorrectEmailPass -->
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:automation.testsuite.Day13_btvn@16610890]" started-at="2025-02-23T02:25:46 MYT" name="openBrowser" finished-at="2025-02-23T02:25:49 MYT" duration-ms="2751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="loginFail_IncorrectPass()[pri:0, instance:automation.testsuite.Day13_btvn@16610890]" started-at="2025-02-23T02:25:49 MYT" name="loginFail_IncorrectPass" finished-at="2025-02-23T02:25:50 MYT" duration-ms="801" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFail_IncorrectPass -->
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:automation.testsuite.Day13_btvn@16610890]" started-at="2025-02-23T02:25:50 MYT" name="openBrowser" finished-at="2025-02-23T02:25:52 MYT" duration-ms="2727" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="loginSuccessfully()[pri:0, instance:automation.testsuite.Day13_btvn@16610890]" started-at="2025-02-23T02:25:52 MYT" name="loginSuccessfully" finished-at="2025-02-23T02:25:53 MYT" duration-ms="599" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginSuccessfully -->
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:automation.testsuite.Day13_btvn@16610890]" started-at="2025-02-23T02:25:53 MYT" name="openBrowser" finished-at="2025-02-23T02:25:56 MYT" duration-ms="2744" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="logoutSuccessfully()[pri:0, instance:automation.testsuite.Day13_btvn@16610890]" started-at="2025-02-23T02:25:56 MYT" name="logoutSuccessfully" finished-at="2025-02-23T02:26:33 MYT" duration-ms="37413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutSuccessfully -->
       </class> <!-- automation.testsuite.Day13_btvn -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

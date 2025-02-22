@@ -5,7 +5,7 @@
     <classes>
       <class name="automation.testsuite.Day13_btvn">
         <methods>
-          <include name="loginSuccessfully"/>
+          <include name="logoutSuccessfully"/>
           <include name="openBrowser"/>
         </methods>
       </class> <!-- automation.testsuite.Day13_btvn -->
