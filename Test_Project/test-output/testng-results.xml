@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-27T00:21:46 MYT" name="Default suite" finished-at="2025-02-27T00:22:50 MYT" duration-ms="64176">
+  <suite started-at="2025-02-27T00:28:12 MYT" name="Default suite" finished-at="2025-02-27T00:28:55 MYT" duration-ms="43593">
     <groups>
     </groups>
-    <test started-at="2025-02-27T00:21:46 MYT" name="Default test" finished-at="2025-02-27T00:22:50 MYT" duration-ms="64176">
+    <test started-at="2025-02-27T00:28:12 MYT" name="Default test" finished-at="2025-02-27T00:28:55 MYT" duration-ms="43593">
       <class name="automation.testsuite.Day14_btvn_Alada_EditInfo">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:automation.testsuite.Day14_btvn_Alada_EditInfo@bd4dc25]" started-at="2025-02-27T00:21:46 MYT" name="openBrowser" finished-at="2025-02-27T00:22:09 MYT" duration-ms="23040" status="PASS">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:automation.testsuite.Day14_btvn_Alada_EditInfo@53fdffa1]" started-at="2025-02-27T00:28:12 MYT" name="openBrowser" finished-at="2025-02-27T00:28:35 MYT" duration-ms="23131" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="EditSuccessfully()[pri:1, instance:automation.testsuite.Day14_btvn_Alada_EditInfo@bd4dc25]" started-at="2025-02-27T00:22:09 MYT" name="EditSuccessfully" finished-at="2025-02-27T00:22:50 MYT" duration-ms="41124" status="PASS">
+        <test-method signature="LoginNewPasswordSuccessfully()[pri:2, instance:automation.testsuite.Day14_btvn_Alada_EditInfo@53fdffa1]" started-at="2025-02-27T00:28:35 MYT" name="LoginNewPasswordSuccessfully" finished-at="2025-02-27T00:28:55 MYT" duration-ms="20450" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EditSuccessfully -->
+        </test-method> <!-- LoginNewPasswordSuccessfully -->
       </class> <!-- automation.testsuite.Day14_btvn_Alada_EditInfo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

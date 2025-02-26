@@ -39,5 +39,14 @@ public class Day14_btvn_Alada_EditInfo extends CommonBase
         edit.ChinhSuaThongTin("1234567", "1234567edit", "1234567edit");
 		assertTrue(driver.findElement(By.xpath("//a[text()='Khóa học của tôi' and @class='fleft martop20 khct']")).isDisplayed());
 	}
+	
+	@Test(priority = 2)
+	public void LoginNewPasswordSuccessfully()
+	{
+		Day14_LoginPageFactory login = new Day14_LoginPageFactory (driver);
+		login.LoginFunction("minhtramtest_2@gmail.com", "1234567edit");
+		assertTrue(driver.findElement(By.xpath("//a[text()='Khóa học của tôi' and @class='fleft martop20 khct']")).isDisplayed());
+	}
 }
+
 
