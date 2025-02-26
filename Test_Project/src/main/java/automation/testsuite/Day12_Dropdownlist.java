@@ -15,6 +15,7 @@ package automation.testsuite;
 		public void openBrowser()
 		{
 			driver = initBrowser(CT_PageURL.URL_CODESTAR);
+			driver.getTitle();
 		}
 		
 		@Test

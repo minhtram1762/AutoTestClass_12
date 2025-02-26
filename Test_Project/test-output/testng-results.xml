@@ -1,53 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-23T02:25:38 MYT" name="Default suite" finished-at="2025-02-23T02:26:33 MYT" duration-ms="54989">
+  <suite started-at="2025-02-26T13:56:08 MYT" name="Default suite" finished-at="2025-02-26T13:56:25 MYT" duration-ms="16985">
     <groups>
     </groups>
-    <test started-at="2025-02-23T02:25:38 MYT" name="Default test" finished-at="2025-02-23T02:26:33 MYT" duration-ms="54989">
-      <class name="automation.testsuite.Day13_btvn">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:automation.testsuite.Day13_btvn@16610890]" started-at="2025-02-23T02:25:38 MYT" name="openBrowser" finished-at="2025-02-23T02:25:42 MYT" duration-ms="3661" status="PASS">
+    <test started-at="2025-02-26T13:56:08 MYT" name="Default test" finished-at="2025-02-26T13:56:25 MYT" duration-ms="16985">
+      <class name="automation.testsuite.Day13_CSSystem_ThemNhanVien">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:automation.testsuite.Day13_CSSystem_ThemNhanVien@53fdffa1]" started-at="2025-02-26T13:56:08 MYT" name="openBrowser" finished-at="2025-02-26T13:56:11 MYT" duration-ms="2879" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="loginFail_IncorrectEmail()[pri:0, instance:automation.testsuite.Day13_btvn@16610890]" started-at="2025-02-23T02:25:42 MYT" name="loginFail_IncorrectEmail" finished-at="2025-02-23T02:25:43 MYT" duration-ms="763" status="PASS">
+        <test-method signature="themNhanVien()[pri:0, instance:automation.testsuite.Day13_CSSystem_ThemNhanVien@53fdffa1]" started-at="2025-02-26T13:56:11 MYT" name="themNhanVien" finished-at="2025-02-26T13:56:25 MYT" duration-ms="14093" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginFail_IncorrectEmail -->
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:automation.testsuite.Day13_btvn@16610890]" started-at="2025-02-23T02:25:43 MYT" name="openBrowser" finished-at="2025-02-23T02:25:45 MYT" duration-ms="2584" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method signature="loginFail_IncorrectEmailPass()[pri:0, instance:automation.testsuite.Day13_btvn@16610890]" started-at="2025-02-23T02:25:45 MYT" name="loginFail_IncorrectEmailPass" finished-at="2025-02-23T02:25:46 MYT" duration-ms="928" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginFail_IncorrectEmailPass -->
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:automation.testsuite.Day13_btvn@16610890]" started-at="2025-02-23T02:25:46 MYT" name="openBrowser" finished-at="2025-02-23T02:25:49 MYT" duration-ms="2751" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method signature="loginFail_IncorrectPass()[pri:0, instance:automation.testsuite.Day13_btvn@16610890]" started-at="2025-02-23T02:25:49 MYT" name="loginFail_IncorrectPass" finished-at="2025-02-23T02:25:50 MYT" duration-ms="801" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginFail_IncorrectPass -->
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:automation.testsuite.Day13_btvn@16610890]" started-at="2025-02-23T02:25:50 MYT" name="openBrowser" finished-at="2025-02-23T02:25:52 MYT" duration-ms="2727" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method signature="loginSuccessfully()[pri:0, instance:automation.testsuite.Day13_btvn@16610890]" started-at="2025-02-23T02:25:52 MYT" name="loginSuccessfully" finished-at="2025-02-23T02:25:53 MYT" duration-ms="599" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginSuccessfully -->
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:automation.testsuite.Day13_btvn@16610890]" started-at="2025-02-23T02:25:53 MYT" name="openBrowser" finished-at="2025-02-23T02:25:56 MYT" duration-ms="2744" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method signature="logoutSuccessfully()[pri:0, instance:automation.testsuite.Day13_btvn@16610890]" started-at="2025-02-23T02:25:56 MYT" name="logoutSuccessfully" finished-at="2025-02-23T02:26:33 MYT" duration-ms="37413" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutSuccessfully -->
-      </class> <!-- automation.testsuite.Day13_btvn -->
+        </test-method> <!-- themNhanVien -->
+      </class> <!-- automation.testsuite.Day13_CSSystem_ThemNhanVien -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

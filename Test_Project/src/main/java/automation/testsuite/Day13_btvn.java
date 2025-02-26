@@ -23,16 +23,15 @@ public class Day13_btvn extends CommonBase
 		driver = initBrowser("firefox",CT_PageURL.URL_CSSYSTEM);
 	}
 	
-	@Test
+	@Test(priority = 1)
 	public void loginSuccessfully()
-	
 	{
 		LoginPage_CSSystem _login = new LoginPage_CSSystem(driver);
 		_login.LoginFunction("admin@gmail.com", "12345678");
 		assertTrue(driver.findElement(By.xpath("//p[text()='Quản lý người dùng']")).isDisplayed());
 	}
 
-	@Test
+	@Test(priority = 2)
 	public void loginFail_IncorrectEmail()
 	{
 		LoginPage_CSSystem _login = new LoginPage_CSSystem(driver);
@@ -48,7 +47,7 @@ public class Day13_btvn extends CommonBase
 	    assertTrue(messageText.contains("Email hoặc mật khẩu không đúng"), "Flash message không đúng hoặc không xuất hiện!");
 	}	
 	
-	@Test
+	@Test(priority = 3)
 	public void loginFail_IncorrectPass()
 	{
 		LoginPage_CSSystem _login = new LoginPage_CSSystem(driver);
@@ -63,7 +62,7 @@ public class Day13_btvn extends CommonBase
 	    assertTrue(messageText.contains("Email hoặc mật khẩu không đúng"), "Flash message không đúng hoặc không xuất hiện!");
 	}	
 	
-	@Test
+	@Test(priority = 4)
 	public void loginFail_IncorrectEmailPass()
 	{
 		LoginPage_CSSystem _login = new LoginPage_CSSystem(driver);
@@ -78,7 +77,7 @@ public class Day13_btvn extends CommonBase
 	    assertTrue(messageText.contains("Email hoặc mật khẩu không đúng"), "Flash message không đúng hoặc không xuất hiện!");
 	}	
 	
-	@Test
+	@Test(priority = 5)
 	public void logoutSuccessfully()
 	
 	{
