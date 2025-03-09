@@ -43,7 +43,11 @@ public class Day16_CSSystem_QuanLyKVLV extends CommonBase
 		click(By.xpath("//button[text()='Lưu']"));
 	    wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Thêm']"))).click();
 	}
-	
+
+	public void deleteKLV (String timKiem) 
+	{
+		type(By.xpath("//input[@placeholder='Nhập từ khóa cần tìm kiếm']"), timKiem);
+	}
 	
 }
 
