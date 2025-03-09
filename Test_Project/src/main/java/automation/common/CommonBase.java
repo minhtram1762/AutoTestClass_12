@@ -1,5 +1,6 @@
 package automation.common;
 
+import org.openqa.selenium.WebDriver;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.support.ui.*;
@@ -7,21 +8,30 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class CommonBase {
-	public WebDriver driver;
+public class CommonBase 
+{
+	protected static WebDriver driver; 
+
+    public WebDriver getDriver() 
+    {
+        return driver;
+    }
 	private int pageLoadTimeout = 40;
 
-	 // Đặt Chrome làm trình duyệt mặc định nếu không truyền vào
     public WebDriver initBrowser(String browserName, String URL) {
-        if (browserName == null || browserName.isEmpty()) {
+        System.out.println("Initializing browser: " + browserName);
+
+    	if (browserName == null || browserName.isEmpty()) {
             browserName = "chrome"; // Mặc định chạy Chrome
         }
 
+        String driverPath = System.getProperty("user.dir") + "/driver/";
+
         if (browserName.equalsIgnoreCase("chrome")) {
-            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/driver/chromedriver");
+            System.setProperty("webdriver.chrome.driver", driverPath + "chromedriver"); 
             driver = new ChromeDriver();
         } else if (browserName.equalsIgnoreCase("firefox")) {
-            System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/driver/geckodriver");
+            System.setProperty("webdriver.gecko.driver", driverPath + "geckodriver"); 
             driver = new FirefoxDriver();
         } else {
             throw new IllegalArgumentException("Unsupported browser: " + browserName);
@@ -29,7 +39,10 @@ public class CommonBase {
 
         driver.get(URL);
         driver.manage().window().maximize();
-        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        
+        System.out.println("Browser initialized successfully!");
+
         return driver;
     }
 
@@ -40,22 +53,33 @@ public class CommonBase {
     
    public WebElement getElementPresentDOM (By locator)
    {
+	   if (driver == null) {
+	        System.out.println("LỖI: WebDriver chưa được khởi tạo!");
+	        throw new RuntimeException("WebDriver is null");
+	    }
+	   
 	   WebDriverWait wait = new WebDriverWait (driver, Duration.ofSeconds(pageLoadTimeout));
 	   wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 	   return driver.findElement(locator); 
    }
    
-   public void click (By locator)
+   public void click(By locator)
    {
 	   WebElement element = getElementPresentDOM(locator);
 	   WebDriverWait wait = new WebDriverWait (driver, Duration.ofSeconds(pageLoadTimeout));
 	   wait.until(ExpectedConditions.elementToBeClickable(locator));
+	   if (element == null) {
+			throw new RuntimeException("Không tìm thấy phần tử: " + locator.toString());
+		}
 	   element.click();
    }
    
    public void type(By locator, String value)
    {
 	   WebElement element = getElementPresentDOM(locator);
+	   if (element == null) {
+			throw new RuntimeException("Không tìm thấy phần tử: " + locator.toString());
+		}
 	   element.clear();
 	   element.sendKeys(value);
    }
@@ -63,9 +87,9 @@ public class CommonBase {
    public boolean isElementDisplayed(By locator)
    {
 	   try {
-	   WebElement element = getElementPresentDOM(locator); 
-	   WebDriverWait wait = new WebDriverWait (driver, Duration.ofSeconds(pageLoadTimeout));
-	   wait.until(ExpectedConditions.visibilityOf(element));
+		   WebElement element = getElementPresentDOM(locator); 
+		   WebDriverWait wait = new WebDriverWait (driver, Duration.ofSeconds(pageLoadTimeout));
+		   wait.until(ExpectedConditions.visibilityOf(element));
 	   return element.isDisplayed(); 
 	   }
    		catch (NoSuchElementException ex1)

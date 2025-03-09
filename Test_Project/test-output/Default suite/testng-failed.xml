@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automation.testsuite.Day15_Tedu_Test">
+      <class name="automation.testsuite.Day16_btvnAlert_3">
         <methods>
+          <include name="DeleteCustomer"/>
           <include name="openBrowser"/>
-          <include name="searchKhoaHocSuccessfully"/>
         </methods>
-      </class> <!-- automation.testsuite.Day15_Tedu_Test -->
+      </class> <!-- automation.testsuite.Day16_btvnAlert_3 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
