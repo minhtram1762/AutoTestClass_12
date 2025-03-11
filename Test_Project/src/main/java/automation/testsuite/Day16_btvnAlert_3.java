@@ -19,7 +19,7 @@ public class Day16_btvnAlert_3 extends CommonBase
 	@BeforeMethod
 	public void openBrowser()
 	{
-		driver = initBrowser("firefox",CT_PageURL.URL_GURU99);
+		driver = initBrowser("firefox",CT_PageURL.URL_GURU99_delete);
 	}	
 
 	@Test (priority = 1)

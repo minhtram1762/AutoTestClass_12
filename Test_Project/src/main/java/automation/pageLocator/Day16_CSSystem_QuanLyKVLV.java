@@ -32,7 +32,7 @@ public class Day16_CSSystem_QuanLyKVLV extends CommonBase
 		click(By.name("signin"));
 	}
 	
-	public void addKLV (String tenKLV, String maKLV) 
+	public void addKLV (String maKLV, String tenKLV) 
 	{
 	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
@@ -44,11 +44,22 @@ public class Day16_CSSystem_QuanLyKVLV extends CommonBase
 	    wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Thêm']"))).click();
 	}
 
-	public void deleteKLV (String timKiem) 
+	public void deleteKLV (String tenKLV) 
 	{
-		type(By.xpath("//input[@placeholder='Nhập từ khóa cần tìm kiếm']"), timKiem);
+		click(By.xpath("//a[normalize-space()='Quản lý khu làm việc']"));
+		type(By.xpath("//input[@placeholder='Nhập từ khóa cần tìm kiếm']"), tenKLV);
+		click(By.xpath("//button[text()='Tìm kiếm']"));	
+		click(By.xpath("//td[text()='"+ tenKLV +"']/following-sibling::td/a[normalize-space()='Xóa']"));		
 	}
-	
+
+	public void addKLV_unsuccessfully (String maKLV, String tenKLV) 
+	{
+		click(By.xpath("//a[@class='nav-link link-dark' and normalize-space()='Quản lý khu làm việc']"));
+		click(By.xpath("//button[text()='Thêm mới']"));
+		type(By.name("work_areas_code"), maKLV);
+		type(By.name("name"), tenKLV);
+		click(By.xpath("//button[text()='Lưu']"));
+	}
 }
 
 

@@ -6,7 +6,7 @@
       <class name="automation.testsuite.Day16_QuanLyKLV_Test">
         <methods>
           <include name="openBrowser"/>
-          <include name="deleteKLV_successfully"/>
+          <include name="addKLV_unsuccessfully_TH1"/>
         </methods>
       </class> <!-- automation.testsuite.Day16_QuanLyKLV_Test -->
     </classes>
