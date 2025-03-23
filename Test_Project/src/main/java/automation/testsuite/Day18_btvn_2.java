@@ -14,10 +14,11 @@ import org.testng.annotations.*;
 
 public class Day18_btvn_2 extends CommonBase
 {
+	@Parameters("browserTestNG") 
 	@BeforeMethod
-	public void openBrowser()
+	public void openBrowser(String browserTestNG) 
 	{
-		driver = initBrowser("https://bepantoan.vn/");
+		driver = initBrowser(browserTestNG,"https://bepantoan.vn/");
 	}
 
 	@Test 

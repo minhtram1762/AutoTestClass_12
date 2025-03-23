@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="TestSuite">
-
-	<test name="TestProject with firefox">
-	<parameter name ="browserTestNG" value="firefox"> </parameter>
+	
+	<test name="TestProject with chrome">
+	<parameter name ="browserTestNG" value="chrome"> </parameter>
 		<classes>
-			<class name="automation.testsuite.Day16_QuanLyKLV_Test"/>
-			<class name="automation.testsuite.Day16_Alert_Test"/>
+			<class name="automation.testsuite.Day18_btvn_1"/>
+			<class name="automation.testsuite.Day18_btvn_2"/>
 		</classes>	
 	</test> 
 	
 	<test name="TestProject with MS edge">
 	<parameter name ="browserTestNG" value="edge"> </parameter>
 		<classes>
-			<class name="automation.testsuite.Day16_QuanLyKLV_Test"/>
-			<class name="automation.testsuite.Day16_Alert_Test"/>
+			<class name="automation.testsuite.Day18_btvn_1"/>
+			<class name="automation.testsuite.Day18_btvn_2"/>
 		</classes>	
 	</test> 
 	

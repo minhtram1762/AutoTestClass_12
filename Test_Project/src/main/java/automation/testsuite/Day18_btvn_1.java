@@ -1,6 +1,8 @@
 package automation.testsuite;
 
 import automation.common.CommonBase;
+import automation.constant.CT_PageURL;
+
 import java.util.Set;
 
 import org.openqa.selenium.By;
@@ -10,10 +12,11 @@ import org.testng.annotations.*;
 
 public class Day18_btvn_1 extends CommonBase
 {
+	@Parameters("browserTestNG") 
 	@BeforeMethod
-	public void openBrowser()
+	public void openBrowser(String browserTestNG) 
 	{
-		driver = initBrowser("https://dienmaynhapkhaugiare.com.vn/");
+		driver = initBrowser(browserTestNG,"https://dienmaynhapkhaugiare.com.vn/");
 	}
 
 	@Test 

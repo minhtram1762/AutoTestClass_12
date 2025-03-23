@@ -4,16 +4,12 @@
   <test thread-count="5" name="TestProject with MS edge(failed)">
     <parameter name="browserTestNG" value="edge"/>
     <classes>
-      <class name="automation.testsuite.Day16_QuanLyKLV_Test">
+      <class name="automation.testsuite.Day18_btvn_1">
         <methods>
-          <include name="addKLV_successfully"/>
-          <include name="addKLV_unsuccessfully_TH3"/>
           <include name="openBrowser"/>
-          <include name="addKLV_unsuccessfully_TH1"/>
-          <include name="addKLV_unsuccessfully_TH2"/>
-          <include name="deleteKLV_successfully"/>
+          <include name="lienHeZalo"/>
         </methods>
-      </class> <!-- automation.testsuite.Day16_QuanLyKLV_Test -->
+      </class> <!-- automation.testsuite.Day18_btvn_1 -->
     </classes>
   </test> <!-- TestProject with MS edge(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->

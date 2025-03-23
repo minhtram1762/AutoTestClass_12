@@ -1,21 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-23T18:18:02 MYT" name="Default suite" finished-at="2025-03-23T18:19:15 MYT" duration-ms="72523">
+  <suite started-at="2025-03-23T18:41:57 MYT" name="TestSuite" finished-at="2025-03-23T18:48:05 MYT" duration-ms="368601">
     <groups>
     </groups>
-    <test started-at="2025-03-23T18:18:02 MYT" name="Default test" finished-at="2025-03-23T18:19:15 MYT" duration-ms="72523">
+    <test started-at="2025-03-23T18:41:57 MYT" name="TestProject with chrome" finished-at="2025-03-23T18:44:11 MYT" duration-ms="133632">
       <class name="automation.testsuite.Day18_btvn_2">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:automation.testsuite.Day18_btvn_2@169e6180]" started-at="2025-03-23T18:18:02 MYT" name="openBrowser" finished-at="2025-03-23T18:18:57 MYT" duration-ms="54741" status="PASS">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:automation.testsuite.Day18_btvn_2@3cebbb30]" started-at="2025-03-23T18:42:59 MYT" name="openBrowser" finished-at="2025-03-23T18:43:53 MYT" duration-ms="54435" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="lienHeMessenger()[pri:0, instance:automation.testsuite.Day18_btvn_2@169e6180]" started-at="2025-03-23T18:18:57 MYT" name="lienHeMessenger" finished-at="2025-03-23T18:19:15 MYT" duration-ms="17757" status="PASS">
+        <test-method signature="lienHeMessenger()[pri:0, instance:automation.testsuite.Day18_btvn_2@3cebbb30]" started-at="2025-03-23T18:43:53 MYT" name="lienHeMessenger" finished-at="2025-03-23T18:44:11 MYT" duration-ms="17395" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lienHeMessenger -->
       </class> <!-- automation.testsuite.Day18_btvn_2 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="automation.testsuite.Day18_btvn_1">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:automation.testsuite.Day18_btvn_1@611889f4]" started-at="2025-03-23T18:41:57 MYT" name="openBrowser" finished-at="2025-03-23T18:42:42 MYT" duration-ms="44600" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="lienHeZalo()[pri:0, instance:automation.testsuite.Day18_btvn_1@611889f4]" started-at="2025-03-23T18:42:42 MYT" name="lienHeZalo" finished-at="2025-03-23T18:42:59 MYT" duration-ms="17175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lienHeZalo -->
+      </class> <!-- automation.testsuite.Day18_btvn_1 -->
+    </test> <!-- TestProject with chrome -->
+    <test started-at="2025-03-23T18:44:11 MYT" name="TestProject with MS edge" finished-at="2025-03-23T18:48:05 MYT" duration-ms="234943">
+      <class name="automation.testsuite.Day18_btvn_2">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:automation.testsuite.Day18_btvn_2@4d5650ae]" started-at="2025-03-23T18:45:49 MYT" name="openBrowser" finished-at="2025-03-23T18:47:27 MYT" duration-ms="98395" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="lienHeMessenger()[pri:0, instance:automation.testsuite.Day18_btvn_2@4d5650ae]" started-at="2025-03-23T18:47:27 MYT" name="lienHeMessenger" finished-at="2025-03-23T18:48:05 MYT" duration-ms="38193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lienHeMessenger -->
+      </class> <!-- automation.testsuite.Day18_btvn_2 -->
+      <class name="automation.testsuite.Day18_btvn_1">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:automation.testsuite.Day18_btvn_1@70e9c95d]" started-at="2025-03-23T18:44:11 MYT" name="openBrowser" finished-at="2025-03-23T18:45:28 MYT" duration-ms="77295" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="lienHeZalo()[pri:0, instance:automation.testsuite.Day18_btvn_1@70e9c95d]" started-at="2025-03-23T18:45:28 MYT" name="lienHeZalo" finished-at="2025-03-23T18:45:49 MYT" duration-ms="21049" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lienHeZalo -->
+      </class> <!-- automation.testsuite.Day18_btvn_1 -->
+    </test> <!-- TestProject with MS edge -->
+  </suite> <!-- TestSuite -->
 </testng-results>

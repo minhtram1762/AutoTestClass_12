@@ -27,7 +27,7 @@ public class CommonBase
 
 	    String driverPath = System.getProperty("user.dir") + "/driver/";
 	    WebDriver driver;
-
+	    try {
 	    switch (browserName.toLowerCase()) {
 	        case "chrome":
 	            System.setProperty("webdriver.chrome.driver", driverPath + "chromedriver");
@@ -51,6 +51,13 @@ public class CommonBase
 	    
 	    System.out.println("Browser initialized successfully!");
 	    return driver;
+	    }
+	   catch (Exception e) 
+	    {
+		   System.err.println("❌ Lỗi khi khởi tạo trình duyệt: " + e.getMessage());
+	        e.printStackTrace();
+	        return null;
+	    }
 	}
 
     // Overload phương thức để hỗ trợ các test case cũ
