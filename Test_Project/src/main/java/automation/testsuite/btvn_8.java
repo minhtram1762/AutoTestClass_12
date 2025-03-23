@@ -8,7 +8,7 @@ import automation.common.CommonBase;
 
 public class btvn_8 extends CommonBase {
 	@BeforeMethod
-	public void openBrowerTest()
+	public void openBrowserTest()
 	{
 		driver = initBrowser("https://automationfc.github.io/basic-form/index.html");
 	}

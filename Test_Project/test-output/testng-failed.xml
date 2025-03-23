@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automation.testsuite.Day17_btvn">
+      <class name="automation.testsuite.Day18_BepTu">
         <methods>
-          <include name="zalo"/>
+          <include name="testBepTu_Bosch"/>
           <include name="openBrowser"/>
         </methods>
-      </class> <!-- automation.testsuite.Day17_btvn -->
+      </class> <!-- automation.testsuite.Day18_BepTu -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

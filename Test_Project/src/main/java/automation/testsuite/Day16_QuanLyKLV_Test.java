@@ -20,15 +20,11 @@ import automation.pageLocator.Day16_CSSystem_QuanLyKVLV;
 public class Day16_QuanLyKLV_Test extends CommonBase
 {
 	String tenKLV = "KLV Tram Test";
+	@Parameters("browserTestNG") //ten param trong phuong thuc test ma file testNG.xml anh xa toi
 	@BeforeMethod
-	public void openBrowser() 
+	public void openBrowser(String browserTestNG) //ten param ma phuong thuc test se tim gia tri trong file testNG.xml 
 	{
-		driver = initBrowser("firefox",CT_PageURL.URL_CSSYSTEM);
-		if (driver == null) 
-		{
-		   throw new RuntimeException("WebDriver is null after initialization!");
-		}
-		System.out.println("Driver initialized in openBrowser: " + driver);
+		driver = initBrowser(browserTestNG,CT_PageURL.URL_CSSYSTEM);
 	}
 		
 	@Test(priority = 1)

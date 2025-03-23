@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-11T23:08:22 MYT" name="Default suite" finished-at="2025-03-11T23:08:37 MYT" duration-ms="15198">
+  <suite started-at="2025-03-23T17:27:49 MYT" name="Default suite" finished-at="2025-03-23T17:28:00 MYT" duration-ms="11071">
     <groups>
     </groups>
-    <test started-at="2025-03-11T23:08:22 MYT" name="Default test" finished-at="2025-03-11T23:08:37 MYT" duration-ms="15198">
-      <class name="automation.testsuite.Day17_btvn">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:automation.testsuite.Day17_btvn@169e6180]" started-at="2025-03-11T23:08:22 MYT" name="openBrowser" finished-at="2025-03-11T23:08:30 MYT" duration-ms="8342" status="PASS">
+    <test started-at="2025-03-23T17:27:49 MYT" name="Default test" finished-at="2025-03-23T17:28:00 MYT" duration-ms="11071">
+      <class name="automation.testsuite.Day18_BepTu">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:automation.testsuite.Day18_BepTu@169e6180]" started-at="2025-03-23T17:27:49 MYT" name="openBrowser" finished-at="2025-03-23T17:27:57 MYT" duration-ms="8507" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="zalo()[pri:1, instance:automation.testsuite.Day17_btvn@169e6180]" started-at="2025-03-11T23:08:30 MYT" name="zalo" finished-at="2025-03-11T23:08:37 MYT" duration-ms="6828" status="PASS">
+        <test-method signature="testBepTu_Bosch()[pri:0, instance:automation.testsuite.Day18_BepTu@169e6180]" started-at="2025-03-23T17:27:57 MYT" name="testBepTu_Bosch" finished-at="2025-03-23T17:28:00 MYT" duration-ms="2541" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- zalo -->
-      </class> <!-- automation.testsuite.Day17_btvn -->
+        </test-method> <!-- testBepTu_Bosch -->
+      </class> <!-- automation.testsuite.Day18_BepTu -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -2,10 +2,10 @@ package automation.common;
 
 import org.openqa.selenium.WebDriver;
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.support.ui.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class CommonBase 
@@ -18,33 +18,40 @@ public class CommonBase
     }
 	private int pageLoadTimeout = 40;
 
-    public WebDriver initBrowser(String browserName, String URL) {
-        System.out.println("Initializing browser: " + browserName);
+	public WebDriver initBrowser(String browserName, String URL) {
+	    System.out.println("Initializing browser: " + browserName);
 
-    	if (browserName == null || browserName.isEmpty()) {
-            browserName = "chrome"; // Mặc định chạy Chrome
-        }
+	    if (browserName == null || browserName.isEmpty()) {
+	        browserName = "chrome"; // Mặc định chạy Chrome
+	    }
 
-        String driverPath = System.getProperty("user.dir") + "/driver/";
+	    String driverPath = System.getProperty("user.dir") + "/driver/";
+	    WebDriver driver;
 
-        if (browserName.equalsIgnoreCase("chrome")) {
-            System.setProperty("webdriver.chrome.driver", driverPath + "chromedriver"); 
-            driver = new ChromeDriver();
-        } else if (browserName.equalsIgnoreCase("firefox")) {
-            System.setProperty("webdriver.gecko.driver", driverPath + "geckodriver"); 
-            driver = new FirefoxDriver();
-        } else {
-            throw new IllegalArgumentException("Unsupported browser: " + browserName);
-        }
+	    switch (browserName.toLowerCase()) {
+	        case "chrome":
+	            System.setProperty("webdriver.chrome.driver", driverPath + "chromedriver");
+	            driver = new ChromeDriver();
+	            break;
+	        case "firefox":
+	            System.setProperty("webdriver.gecko.driver", driverPath + "geckodriver");
+	            driver = new FirefoxDriver();
+	            break;
+	        case "edge":
+	            System.setProperty("webdriver.edge.driver", driverPath + "msedgedriver");
+	            driver = new EdgeDriver();
+	            break;
+	        default:
+	            throw new IllegalArgumentException("Unsupported browser: " + browserName);
+	    }
 
-        driver.get(URL);
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        
-        System.out.println("Browser initialized successfully!");
-
-        return driver;
-    }
+	    driver.get(URL);
+	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	    
+	    System.out.println("Browser initialized successfully!");
+	    return driver;
+	}
 
     // Overload phương thức để hỗ trợ các test case cũ
     public WebDriver initBrowser(String URL) {
