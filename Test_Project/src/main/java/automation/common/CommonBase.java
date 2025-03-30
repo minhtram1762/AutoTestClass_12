@@ -54,7 +54,7 @@ public class CommonBase
 	    }
 	   catch (Exception e) 
 	    {
-		   System.err.println("❌ Lỗi khi khởi tạo trình duyệt: " + e.getMessage());
+		   System.err.println("Lỗi khi khởi tạo trình duyệt: " + e.getMessage());
 	        e.printStackTrace();
 	        return null;
 	    }

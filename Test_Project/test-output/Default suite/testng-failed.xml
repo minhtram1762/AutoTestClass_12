@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automation.testsuite.Day18_btvn_2">
+      <class name="automation.testsuite.Day19_FinalProject">
         <methods>
           <include name="openBrowser"/>
-          <include name="lienHeMessenger"/>
+          <include name="editKLV_successfully_3"/>
         </methods>
-      </class> <!-- automation.testsuite.Day18_btvn_2 -->
+      </class> <!-- automation.testsuite.Day19_FinalProject -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -43,6 +43,13 @@ public class Day16_CSSystem_QuanLyKVLV extends CommonBase
 		click(By.xpath("//button[text()='Lưu']"));
 	    wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Thêm']"))).click();
 	}
+	
+	public void searchKLV (String tenKLV) 
+	{
+		click(By.xpath("//a[normalize-space()='Quản lý khu làm việc']"));
+		type(By.xpath("//input[@placeholder='Nhập từ khóa cần tìm kiếm']"), tenKLV);
+		click(By.xpath("//button[text()='Tìm kiếm']"));	
+	}
 
 	public void deleteKLV (String tenKLV) 
 	{
@@ -60,6 +67,24 @@ public class Day16_CSSystem_QuanLyKVLV extends CommonBase
 		type(By.name("name"), tenKLV);
 		click(By.xpath("//button[text()='Lưu']"));
 	}
+	
+	public void exportExcel() 
+	{
+		click(By.xpath("//a[normalize-space()='Quản lý khu làm việc']"));
+		click(By.xpath("//button[text()='Xuất ra Excel']"));
+	}
+	
+	public void editKLV (String maKLV, String tenKLV) 
+	{
+		click(By.xpath("//a[normalize-space()='Quản lý khu làm việc']"));
+		type(By.xpath("//input[@placeholder='Nhập từ khóa cần tìm kiếm']"), tenKLV);
+		click(By.xpath("//button[text()='Tìm kiếm']"));	
+		click(By.xpath("//td[text()='"+ tenKLV +"']/following-sibling::td/a[normalize-space()='Sửa']"));		
+		type(By.name("name"), tenKLV);
+		click(By.xpath("//button[text()='Lưu']"));
+		click(By.xpath("//button[text()='Chỉnh sửa']"));
+	}
+	
 }
 
 
